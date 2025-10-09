@@ -14,22 +14,21 @@ This repository contains all Level 1 web development tasks completed as part of 
 
 ## 🧩 Tasks
 
-### 🔹 Task 1 – Landing Page
+### 🔹 Task 1 – Portfolio Website
+- **Goal:** Build a personal portfolio page showcasing skills and projects.  
+- **Focus:** Navigation, responsive sections, clean typography, and modern UI.  
+- **Tech Used:** HTML5, CSS3, Bootstrap5, optional JS animations.
+
+📁 Folder → `/Level1/Task 1`
+
+---
+
+### 🔹 Task 2 – Landing Page
 - **Goal:** Create a visually appealing landing page using only HTML & CSS.  
 - **Focus:** Layout design, section alignment, color palette, responsive design.  
 - **Tech Used:** HTML5, CSS3, Bootstrap5 (optional).  
 
 📁 Folder → `/Level1/Task 2`  
-
-
----
-
-### 🔹 Task 2 – Portfolio Website
-- **Goal:** Build a personal portfolio page showcasing skills and projects.  
-- **Focus:** Navigation, responsive sections, clean typography, and modern UI.  
-- **Tech Used:** HTML5, CSS3, Bootstrap5, optional JS animations.  
-
-📁 Folder → `/Level1/Task 1`
 
 ---
 
