@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: #222;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo span {
+  color: #00c896;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #00c896;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #111, #333);
+  color: white;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 3rem;
+}
+.hero-content span {
+  color: #00c896;
+}
+.hero-content p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+.btn {
+  background: #00c896;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #00a67d;
+}
+
+/* About Section */
+.about {
+  padding: 80px 50px;
+  background: white;
+}
+.about h2 {
+  text-align: center;
+  color: #111;
+  margin-bottom: 40px;
+}
+.about-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.about-text {
+  max-width: 600px;
+}
+
+/* Projects */
+.projects {
+  background: #111;
+  color: white;
+  padding: 80px 50px;
+}
+.projects h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.project-card {
+  background: #222;
+  padding: 30px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-card h3 {
+  color: #00c896;
+}
+
+/* Contact */
+.contact {
+  padding: 80px 50px;
+  background: white;
+  text-align: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.contact-form button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

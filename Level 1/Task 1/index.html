@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Priyanshu Yadav — Web Developer</title>
+  <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0b0b0b;
+      --card-bg:#0f0f0f;
+      --muted:#bfc3c6;
+      --accent:#2ecc71;
+      --glass: rgba(255,255,255,0.03);
+    }
+    html,body{height:100%;}
+    body{
+      background: linear-gradient(180deg, #050505 0%, #0b0b0b 100%);
+      color: #e9ecef;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Navbar */
+    .navbar-brand img{border-radius:8px}
+    .logo{font-weight:600; font-size:1.1rem; margin:0; color:#fff}
+
+    /* Hero */
+    #home{padding:6rem 1.5rem; text-align:left}
+    #home h1{font-size:2.1rem; line-height:1.05; font-weight:700}
+    #home p{color:var(--muted); max-width:760px}
+    .start-button{border-radius:999px; padding:0.7rem 1.3rem}
+
+    /* Cards */
+    .card-compact{background:var(--card-bg); border:1px solid rgba(255,255,255,0.03)}
+    .card-compact .heading{color:#fff; font-weight:600}
+    .card-compact .icon{font-size:1.4rem}
+    .badge-custom{background:var(--glass); color:var(--muted); padding:0.35rem 0.7rem; border-radius:10px}
+
+    /* About heading */
+    #about-heading,#contact-heading{margin:2.5rem 0 1rem 0; font-size:1.6rem}
+
+    /* Contact */
+    #contact form{max-width:720px}
+    #contact input,#contact textarea{background:transparent; border:1px solid rgba(255,255,255,0.06); color:var(--muted); padding:0.7rem; border-radius:8px}
+    #contact textarea{min-height:120px}
+
+    footer{padding:1.2rem; text-align:center; color:var(--muted); margin-top:3rem}
+
+    /* Utilities */
+    .muted{color:var(--muted)}
+    .smallcaps{letter-spacing:2px; font-size:0.85rem; text-transform:uppercase}
+
+    @media(min-width:992px){
+      #home{padding:7rem 3rem}
+      #home h1{font-size:3rem}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top py-3" style="background:transparent;">
+      <div class="container-lg">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+          <img src="Logo.png" height="48" width="48" alt="Logo">
+          <div class="d-none d-md-block">
+            <div class="logo">Priyanshu yadav</div>
+            <div class="smallcaps muted">Web Developer</div>
+          </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item px-2"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item px-2"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item px-2"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item px-2"><a class="btn btn-outline-light start-button" href="#contact">Hire Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="container-lg">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1>Hi, I'm <strong>Priyanshu Yadav</strong><br>
+            Web Developer &amp; Front-end Enthusiast</h1>
+          <p class="mt-3">
+            This is a clean, minimal portfolio landing page built during the CodSoft Web Development Internship — Level 1 (Task 1).
+            I build responsive user interfaces, small web apps, and landing pages using HTML, CSS, JavaScript and Bootstrap.
+          </p>
+
+          <div class="mt-4 d-flex gap-2">
+            <a class="btn btn-outline-light start-button" href="#about">See Projects</a>
+            <a class="btn btn-light start-button" href="#contact">Contact Me</a>
+          </div>
+
+        </div>
+
+        <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+          <!-- Placeholder for large showcased image or logo -->
+          <div style="width:260px; height:260px; border-radius:50%; background:rgba(255,255,255,0.02); display:flex; align-items:center; justify-content:center;">
+            <img src="Logo.png" alt="Logo" style="width:64%; height:64%; object-fit:contain; opacity:0.95">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container-lg">
+      <h2 id="about-heading">About</h2>
+      <div class="row gy-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-compact p-3 h-100">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <small class="muted">About Me</small>
+                <h5 class="mt-2 heading">Student — IIT Madras</h5>
+              </div>
+              <div class="badge-custom">Web Developer</div>
+            </div>
+
+            <div class="mt-3 text-center">
+              <img src="2.jpg" alt="profile" style="height:110px; border-radius:8px; background:#fff; padding:6px">
+              <h6 class="mt-3">HTML5 | CSS3 | JavaScript ES6</h6>
+              <p class="muted">Bootstrap5 • jQuery • Git &amp; GitHub</p>
+              <div class="mt-3">
+                <div class="progress" style="height:8px; background:rgba(255,255,255,0.03)">
+                  <div class="progress-bar" role="progressbar" style="width:90%; background:var(--accent)"></div>
+                </div>
+                <div class="mt-2 muted">Proficiency: 4/5</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-compact p-3 h-100">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <small class="muted">CodSoft</small>
+                <h5 class="mt-2 heading">Web Development Internship</h5>
+              </div>
+              <div class="badge-custom">IT Industry</div>
+            </div>
+
+            <div class="mt-3 text-center">
+              <img src="CodSoft-Logo.png" alt="CodSoft" style="height:110px; border-radius:8px; padding:6px; background:transparent; filter:saturate(1.3)">
+              <h6 class="mt-3">CodSoft</h6>
+              <p class="muted">Provider of IT business solutions and full life-cycle professional services.</p>
+              <div class="mt-3">
+                <div class="progress" style="height:8px; background:rgba(255,255,255,0.03)">
+                  <div class="progress-bar" role="progressbar" style="width:95%; background:var(--accent)"></div>
+                </div>
+                <div class="mt-2 muted">Current: Web Dev Internship</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-compact p-3 h-100">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <small class="muted">Level</small>
+                <h5 class="mt-2 heading">Level 1 — Task 1</h5>
+              </div>
+              <div class="badge-custom">Web Development</div>
+            </div>
+
+            <div class="mt-3 text-center">
+              <img src="1.jpg" alt="level" style="height:110px; border-radius:8px; padding:6px; background:transparent; filter:saturate(1.2)">
+              <h6 class="mt-3">Batch: Sep–Oct 2025</h6>
+              <p class="muted">Task: Landing Page — Developed by Priyanshu Yadav</p>
+              <div class="mt-3">
+                <div class="progress" style="height:8px; background:rgba(255,255,255,0.03)">
+                  <div class="progress-bar" role="progressbar" style="width:50%; background:var(--accent)"></div>
+                </div>
+                <div class="mt-2 muted">Learning & Growth</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="container-lg mt-5">
+      <h2 id="contact-heading">Contact</h2>
+      <form class="d-flex flex-column gap-3" onsubmit="handleContact(event)">
+        <input id="name" type="text" placeholder="Name" required>
+        <input id="email" type="email" placeholder="Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <div class="d-flex gap-2 align-items-center">
+          <button type="submit" class="btn btn-outline-light">Submit</button>
+          <div id="contact-status" class="muted small"></div>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container-lg">
+      <div class="d-flex justify-content-between align-items-center flex-column flex-md-row gap-2">
+        <div class="muted">&copy; 2025 — Priyanshu Yadav</div>
+        <div class="muted">Built with Bootstrap • HTML • CSS • JS</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleContact(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const status = document.getElementById('contact-status');
+      if(!name || !email || !message){
+        status.textContent = 'Please fill all fields.';
+        return;
+      }
+      // Replace with real submission endpoint as needed.
+      status.textContent = 'Message sent (demo). Thank you — I will reply soon.';
+      e.target.reset();
+      setTimeout(()=> status.textContent = '', 4000);
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
